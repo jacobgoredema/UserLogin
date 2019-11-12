@@ -30,6 +30,9 @@
         {
             this.panelTop = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.panelBottom = new System.Windows.Forms.Panel();
+            this.btnBackground = new System.Windows.Forms.Button();
+            this.btnSkin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnHelp = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
@@ -37,17 +40,16 @@
             this.btnInbox = new System.Windows.Forms.Button();
             this.btnSendMessage = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
-            this.panelBottom = new System.Windows.Forms.Panel();
-            this.btnBackground = new System.Windows.Forms.Button();
-            this.btnSkin = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelBottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTop
             // 
             this.panelTop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelTop.Controls.Add(this.button1);
             this.panelTop.Controls.Add(this.label1);
             this.panelTop.Controls.Add(this.pictureBox1);
             this.panelTop.Controls.Add(this.btnHelp);
@@ -70,88 +72,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 46);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnHelp
-            // 
-            this.btnHelp.Image = global::UserLogin.App.Properties.Resources.help;
-            this.btnHelp.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnHelp.Location = new System.Drawing.Point(661, 7);
-            this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(106, 53);
-            this.btnHelp.TabIndex = 5;
-            this.btnHelp.Text = "Help";
-            this.btnHelp.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnHelp.UseVisualStyleBackColor = true;
-            // 
-            // btnUsers
-            // 
-            this.btnUsers.Image = global::UserLogin.App.Properties.Resources.user;
-            this.btnUsers.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnUsers.Location = new System.Drawing.Point(554, 7);
-            this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Size = new System.Drawing.Size(106, 53);
-            this.btnUsers.TabIndex = 4;
-            this.btnUsers.Text = "Users";
-            this.btnUsers.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnUsers.UseVisualStyleBackColor = true;
-            // 
-            // btnReports
-            // 
-            this.btnReports.Image = global::UserLogin.App.Properties.Resources.report;
-            this.btnReports.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnReports.Location = new System.Drawing.Point(447, 7);
-            this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(106, 53);
-            this.btnReports.TabIndex = 3;
-            this.btnReports.Text = "Reports";
-            this.btnReports.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnReports.UseVisualStyleBackColor = true;
-            // 
-            // btnInbox
-            // 
-            this.btnInbox.Image = global::UserLogin.App.Properties.Resources.envelope;
-            this.btnInbox.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnInbox.Location = new System.Drawing.Point(340, 7);
-            this.btnInbox.Name = "btnInbox";
-            this.btnInbox.Size = new System.Drawing.Size(106, 53);
-            this.btnInbox.TabIndex = 2;
-            this.btnInbox.Text = "Inbox";
-            this.btnInbox.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnInbox.UseVisualStyleBackColor = true;
-            // 
-            // btnSendMessage
-            // 
-            this.btnSendMessage.Image = global::UserLogin.App.Properties.Resources.send_sms;
-            this.btnSendMessage.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSendMessage.Location = new System.Drawing.Point(233, 7);
-            this.btnSendMessage.Name = "btnSendMessage";
-            this.btnSendMessage.Size = new System.Drawing.Size(106, 53);
-            this.btnSendMessage.TabIndex = 1;
-            this.btnSendMessage.Text = "Send Message";
-            this.btnSendMessage.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnSendMessage.UseVisualStyleBackColor = true;
-            // 
-            // btnRegister
-            // 
-            this.btnRegister.Image = global::UserLogin.App.Properties.Resources.data_entry;
-            this.btnRegister.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnRegister.Location = new System.Drawing.Point(126, 7);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(106, 53);
-            this.btnRegister.TabIndex = 0;
-            this.btnRegister.Text = "Data Entry";
-            this.btnRegister.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnRegister.UseVisualStyleBackColor = true;
             // 
             // panelBottom
             // 
@@ -183,6 +103,100 @@
             this.btnSkin.Text = "Skin";
             this.btnSkin.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 46);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Image = global::UserLogin.App.Properties.Resources.help;
+            this.btnHelp.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnHelp.Location = new System.Drawing.Point(682, 7);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(85, 53);
+            this.btnHelp.TabIndex = 5;
+            this.btnHelp.Text = "Help";
+            this.btnHelp.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnHelp.UseVisualStyleBackColor = true;
+            // 
+            // btnUsers
+            // 
+            this.btnUsers.Image = global::UserLogin.App.Properties.Resources.user;
+            this.btnUsers.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnUsers.Location = new System.Drawing.Point(590, 7);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Size = new System.Drawing.Size(85, 53);
+            this.btnUsers.TabIndex = 4;
+            this.btnUsers.Text = "Users";
+            this.btnUsers.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnUsers.UseVisualStyleBackColor = true;
+            // 
+            // btnReports
+            // 
+            this.btnReports.Image = global::UserLogin.App.Properties.Resources.report;
+            this.btnReports.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnReports.Location = new System.Drawing.Point(494, 7);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Size = new System.Drawing.Size(85, 53);
+            this.btnReports.TabIndex = 3;
+            this.btnReports.Text = "Reports";
+            this.btnReports.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnReports.UseVisualStyleBackColor = true;
+            // 
+            // btnInbox
+            // 
+            this.btnInbox.Image = global::UserLogin.App.Properties.Resources.envelope;
+            this.btnInbox.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnInbox.Location = new System.Drawing.Point(313, 7);
+            this.btnInbox.Name = "btnInbox";
+            this.btnInbox.Size = new System.Drawing.Size(85, 53);
+            this.btnInbox.TabIndex = 2;
+            this.btnInbox.Text = "Inbox";
+            this.btnInbox.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnInbox.UseVisualStyleBackColor = true;
+            // 
+            // btnSendMessage
+            // 
+            this.btnSendMessage.Image = global::UserLogin.App.Properties.Resources.send_sms;
+            this.btnSendMessage.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSendMessage.Location = new System.Drawing.Point(218, 7);
+            this.btnSendMessage.Name = "btnSendMessage";
+            this.btnSendMessage.Size = new System.Drawing.Size(85, 53);
+            this.btnSendMessage.TabIndex = 1;
+            this.btnSendMessage.Text = "Send SMS";
+            this.btnSendMessage.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnSendMessage.UseVisualStyleBackColor = true;
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.Image = global::UserLogin.App.Properties.Resources.data_entry;
+            this.btnRegister.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnRegister.Location = new System.Drawing.Point(126, 7);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(85, 53);
+            this.btnRegister.TabIndex = 0;
+            this.btnRegister.Text = "Data Entry";
+            this.btnRegister.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnRegister.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Image = global::UserLogin.App.Properties.Resources.settings;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(409, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 51);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Setting";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // frmMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -200,8 +214,8 @@
             this.Text = "Main Form";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelBottom.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -220,5 +234,6 @@
         private System.Windows.Forms.Button btnSkin;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
