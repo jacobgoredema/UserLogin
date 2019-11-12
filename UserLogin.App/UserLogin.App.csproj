@@ -75,6 +75,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\UserLogin.DataSet.UsersList+UserDataTable.datasource" />
+    <None Include="Properties\DataSources\UserLogin.DataSet.UsersList+UserRow.datasource" />
+    <None Include="Properties\DataSources\UserLogin.DataSet.UsersList+UserRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\UserLogin.DataSet.UsersList+UserRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\UserLogin.DataSet.UsersList.datasource" />
+    <None Include="Properties\DataSources\UserLogin.DataSet.UsersListTableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\UserLogin.DataSet.UsersListTableAdapters.TableAdapterManager.datasource" />
+    <None Include="Properties\DataSources\UserLogin.DataSet.UsersListTableAdapters.UserTableAdapter.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -108,6 +116,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UserLogin.DataSet\UserLogin.DataSet.csproj">
+      <Project>{3c7b1e93-4206-482c-beea-cb3199584988}</Project>
+      <Name>UserLogin.DataSet</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
