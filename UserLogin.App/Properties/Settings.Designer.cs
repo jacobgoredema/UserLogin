@@ -33,5 +33,16 @@ namespace UserLogin.App.Properties {
                 return ((string)(this["LoginUsersConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=JHB-JACOBGOREDE\\SQLEXPRESS;Initial Catalog=LoginUsers;Integrated Secu" +
+            "rity=True")]
+        public string LoginUsersConnectionString1 {
+            get {
+                return ((string)(this["LoginUsersConnectionString1"]));
+            }
+        }
     }
 }
